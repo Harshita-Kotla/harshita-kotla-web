@@ -1,0 +1,72 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 60px 20px;
+  background-color: #fff;
+  animation: fadeIn 1s ease;
+}
+
+.home-card {
+  background-color: #fff;
+  color: #2F3C7E;
+  padding: 50px;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.home-card h1 {
+  font-size: 36px;
+  color: #7400B8;
+  margin-bottom: 20px;
+}
+
+.home-card h2 {
+  font-size: 28px;
+  color: #5E60CE;
+  margin-bottom: 15px;
+}
+
+.home-card p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.home-card button {
+  padding: 12px 24px;
+  background-color: #7400B8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-card button:hover {
+  background-color: #5E60CE;
+  transform: translateY(-3px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

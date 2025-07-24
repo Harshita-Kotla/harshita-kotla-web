@@ -1,0 +1,88 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  animation: fadeIn 1s ease;
+}
+
+.contact-card {
+  background-color: #fff;
+  color: #2F3C7E;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.contact-card h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #7400B8;
+}
+
+.contact-card label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #5E60CE;
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: border 0.3s, background-color 0.3s;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+  border: 1px solid #7400B8;
+  background-color: #fff;
+  outline: none;
+}
+
+.contact-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #7400B8;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-card button:hover {
+  background-color: #5E60CE;
+  transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
